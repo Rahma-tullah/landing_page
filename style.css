@@ -1,0 +1,173 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: rgb(245, 164, 204);
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(248, 128, 188);
+    padding: 15px 20px;
+}
+
+.brand-name {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 24px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #feca57;
+}
+
+/* Main Body */
+.main-body {
+    padding: 40px 10px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.content {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.content img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Order Button */
+.order-btn {
+    display: inline-block;
+    background-color: fuchsia;
+    color: antiquewhite;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: rgb(220, 20, 140);
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: rgb(248, 128, 188);
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #feca57;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        padding-top: 10px;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 0 15px;
+    }
+
+    .order-btn {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    h1 {
+        font-size: 36px;
+        margin-left: 0;
+    }
+
+    .content {
+        max-width: 800px;
+    }
+
+    .content img {
+        max-width: 150px;
+        float: right;
+        margin-left: 0px;
+    }
+    footer {
+        text-align: center;
+        background: rgb(248, 128, 188);
+        color: white;
+        padding: 20px;
+        margin-top: 100px;
+        border-radius: 10px;
+
+    }
+
+}
